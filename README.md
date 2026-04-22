@@ -19,3 +19,4 @@ ex: git remote add origin git@github:<org>/repo.git
 
 You can add multiple remotes to your local repo
 
+Can we push to repos at the same time? Le'ts try
