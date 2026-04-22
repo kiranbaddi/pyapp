@@ -3,7 +3,7 @@ from openai import OpenAI
 def main():
     client = OpenAI()
 
-    response = client.chat.completions.create(
+    res = client.chat.completions.create(
         model="gpt-4o",
         messages=[
             {"role": "system", "content": "You are a helpful assistant."},
@@ -11,7 +11,7 @@ def main():
         ]
     )
 
-    print(response.choices[0].message.content)  
+    print(res.choices[0].message.content)  
     
 if __name__ == "__main__":
     main()
